@@ -12,10 +12,10 @@ class SentimentAnalysis:
 
     def DownloadData(self):
         # authenticating
-        consumerKey = "1pfb7E6gHjDVqIaVo31UbnNAG"
-        consumerSecret = "YmwoIBFe30pHR1FuMQZN9eK0OJjuMmEvz9ff36GFPx2mYuxnLU"
-        accessToken = "539176363-er5K3CSgtGvIyZm5VJNkFoLm6oRYOhs2gEIXipPO"
-        accessTokenSecret = "xHZcZyEBHayo7k2ZKN6mhjyGnSFz6xd4rud9uEcX3UbCh"
+        consumerKey = <Consumer key provided by Twitter>
+        consumerSecret = <Consumer Secret Key provided by Twitter>
+        accessToken = <Access token provided by Twitter>
+        accessTokenSecret = <Secret Access token provided by Twitter>
         auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
         auth.set_access_token(accessToken, accessTokenSecret)
         api = tweepy.API(auth)
@@ -178,7 +178,7 @@ Label(text= "Do not panic if it seems to be stuck :D ",bg="White",width="600",he
 Label(text="").pack()
 
 
-Label(text= "Twitter Sentiment Analysis By Rafay Asim and Ahmed Ali Khan",bg="White",width="600",height="1", font=("Calibri", 10)).pack()
+Label(text= "Twitter Sentiment Analysis By Rafay Asim",bg="White",width="600",height="1", font=("Calibri", 10)).pack()
 Label(text="").pack()
 
 top.mainloop()
